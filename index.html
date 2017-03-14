@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Генератор псевдослучайных последовательностей</title>
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300" media="all" />
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css" media="screen">
+        .floaty {
+            margin:20px auto;
+            width:400px;
+            height:400px;
+            background-color:#fff;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="content"> -->
+        <div class="mainInfo">
+            <h1>Генератор псевдослучайных последовательностей</h1>
+            <div class="aboutMe">
+                <h3>Шум</h3>
+                
+                <div class="noise_rand">
+                    <div id="noise1" class="floaty">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="stats">
+            <div class="col">
+                <h2>Рандом</h2>
+                <ul class="playerStats">
+                    <li><span>Минимальное значениеs:</span><span id="min_def"></span> </li>
+                    <li><span>Максимальное значение:</span><span id="max_def"></span> </li>
+                    <li><span>Количество чисел:</span><span id="count_def"></span> </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Мышь</h2>
+                <ul class="playerStats">
+                    <li><span>X:</span> <span id="x-holder"></span></li>
+                    <li><span>Y:</span> <span id="y-holder"></span></li>
+                    <li><span>Время (ms):</span> <span id="rtime"></span></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Шум</h2>
+                <ul class="playerStats">
+                    <li><span>Ширина (px):</span> <span id="width_noise"></span></li>
+                    <li><span>Высота (px):</span> <span id="height_noise"></span></li>
+                    <li><span>Количество точек:</span> <span id="point_noise"></span></li>
+                    <li><span>Средняя яркость:</span> <span id='brightness_noise'></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div><br><br>
+        <div class="btn_rnd">
+            <input type="button" id="starting" value='Запись координат'>
+            <input type="button" id="mouse_rand" value='Рандом с координат'>
+            <input type="button" id="prng_mouse" value='ГПСЧ мышь'>
+            <br>
+            <input type="button" id="noise_ms" value='Генерация шума'>
+            <input type="button" id="qwert" value='Рандом с шума'>
+            <input type="button" id="prng_noise" value='ГПСЧ шум'>
+            <br>
+
+            <input type="button" id="getRandomDefault" value='Обычный рандом'>
+            <input type="button" id="prng_rand" value='ГПСЧ рандом'>  
+            <input type="button" id="prng_rand_10" value='ГПСЧ рандом 10 раз'>  
+
+            <br>
+            <input type="button" id="printer" value='Карта координат'>            
+    
+        </div>           
+        <div class="canvasQ">
+          <canvas ></canvas>
+        </div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript">
+       </script>
+    </body>
+</html>
